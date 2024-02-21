@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.red[800],
         centerTitle: true,
         title: Text(
-          "Election Nepal",
+          "Know Your Vote",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 18.0,
