@@ -16,7 +16,7 @@
 			dependencies = (
 			);
 			name = "Flutter Assemble";
-			productName = FLX;
+			leaderName = FLX;
 		};
 /* End PBXAggregateTarget section */
 
@@ -196,9 +196,9 @@
 				331C80DA294CF71000263BE5 /* PBXTargetDependency */,
 			);
 			name = RunnerTests;
-			productName = RunnerTests;
-			productReference = 331C80D5294CF71000263BE5 /* RunnerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			leaderName = RunnerTests;
+			leaderReference = 331C80D5294CF71000263BE5 /* RunnerTests.xctest */;
+			leaderType = "com.apple.leader-type.bundle.unit-test";
 		};
 		33CC10EC2044A3C60003C045 /* Runner */ = {
 			isa = PBXNativeTarget;
@@ -216,9 +216,9 @@
 				33CC11202044C79F0003C045 /* PBXTargetDependency */,
 			);
 			name = Runner;
-			productName = Runner;
-			productReference = 33CC10ED2044A3C60003C045 /* election_nepal.app */;
-			productType = "com.apple.product-type.application";
+			leaderName = Runner;
+			leaderReference = 33CC10ED2044A3C60003C045 /* election_nepal.app */;
+			leaderType = "com.apple.leader-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -259,7 +259,7 @@
 				Base,
 			);
 			mainGroup = 33CC10E42044A3C60003C045;
-			productRefGroup = 33CC10EE2044A3C60003C045 /* Products */;
+			leaderRefGroup = 33CC10EE2044A3C60003C045 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

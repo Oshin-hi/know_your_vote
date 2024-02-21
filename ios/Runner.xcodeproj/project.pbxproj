@@ -138,9 +138,9 @@
 				331C8086294A63A400263BE5 /* PBXTargetDependency */,
 			);
 			name = RunnerTests;
-			productName = RunnerTests;
-			productReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			leaderName = RunnerTests;
+			leaderReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
+			leaderType = "com.apple.leader-type.bundle.unit-test";
 		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
@@ -158,9 +158,9 @@
 			dependencies = (
 			);
 			name = Runner;
-			productName = Runner;
-			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
-			productType = "com.apple.product-type.application";
+			leaderName = Runner;
+			leaderReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			leaderType = "com.apple.leader-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,7 +191,7 @@
 				Base,
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
-			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			leaderRefGroup = 97C146EF1CF9000F007C117D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

@@ -11,9 +11,8 @@ final List<Candidate> candidates = [
   Candidate('Samikshya Baskota', 'assets/candidate3.jpg',"90", "Bibeksheel Sajha"),
   Candidate('Keshav Sthapit', 'assets/candidate4.jpg',"80", "CPN UML"),
   Candidate('Suman Sayami', 'assets/candidate5.jpg',"60", "CPN UML"),
-  Candidate('Keshav Singh', 'assets/candidate6.jpg',"60", "CSN"),
-  Candidate('Keshav Soni', 'assets/candidate7.jpg', "58", "MPN"),
-  Candidate('Keshav po', 'assets/candidate8.jpg', "55", "BSP"),
+  Candidate('Madan Das Shrestha', 'assets/candidate6.jpg',"60", "RPN"),
+
 ];
 
 
@@ -79,6 +78,7 @@ class CandidateCard extends StatelessWidget {
             ),
             SizedBox(height: 4.0), // Add some spacing between the texts
             Container(
+
               color: Colors.red[800],
 
               width: (double.parse(candidate.votes)*2),

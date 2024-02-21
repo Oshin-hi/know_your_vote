@@ -9,7 +9,7 @@ class Product extends StatefulWidget {
   }
 }
 
-var productList = [
+var leaderList = [
   {
     "name": "Balen Shah",
     "image": "assets/candidate1.jpg",
@@ -42,23 +42,12 @@ var productList = [
     "party": "CPN UML",
   },
   {
-    "name": "Keshav Singh",
+    "name": "Madan Das Shrestha",
     "image": "assets/candidate6.jpg",
     "wardnumber": 4.0,
-    "party": "CPN UML",
+    "party": "RPN",
   },
-  {
-    "name": "Keshav Soni",
-    "image": "assets/candidate7.jpg",
-    "wardnumber": 4.0,
-    "party": "CPN UML",
-  },
-  {
-    "name": "Keshav po",
-    "image": "assets/candidate8.jpg",
-    "wardnumber": 4.0,
-    "party": "CPN UML",
-  },
+
 ];
 
 class _ProductState extends State<Product> {
@@ -135,16 +124,16 @@ class _ProductState extends State<Product> {
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
-            itemCount: productList.length,
+            itemCount: leaderList.length,
             gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
             ),
             itemBuilder: (BuildContext context, int index) {
               return FeatureProduct(
-                candidateName: productList[index]['name'] as String,
-                candidateImage: productList[index]['image'] as String,
-                candidateWard: productList[index]['wardnumber'] as double,
-                candidateparty: productList[index]['party'] as String,
+                candidateName: leaderList[index]['name'] as String,
+                candidateImage: leaderList[index]['image'] as String,
+                candidateWard: leaderList[index]['wardnumber'] as double,
+                candidateparty: leaderList[index]['party'] as String,
                 index: index,
               );
             },
@@ -182,7 +171,7 @@ class FeatureProduct extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => new ProductDetail(
-                    product: FeatureProduct(
+                    leader: FeatureProduct(
                       candidateName: candidateName,
                       candidateImage: candidateImage,
                       candidateparty: candidateparty,
@@ -241,9 +230,9 @@ class FeatureProduct extends StatelessWidget {
 }
 
 class ProductDetail extends StatelessWidget {
-  final FeatureProduct product;
+  final FeatureProduct leader;
 
-  ProductDetail({required this.product});
+  ProductDetail({required this.leader});
 
   @override
   Widget build(BuildContext context) {
@@ -251,7 +240,7 @@ class ProductDetail extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text("${product.candidateName}"),
+        title: Text("${leader.candidateName}"),
         backgroundColor: Colors.red[800],
 
       ),
@@ -259,7 +248,7 @@ class ProductDetail extends StatelessWidget {
         padding: const EdgeInsets.all(32),
         child: Column(
           children: [Image.asset(
-            product.candidateImage,
+            leader.candidateImage,
             width: 600,
             height: 240,
             fit: BoxFit.cover,
@@ -277,14 +266,14 @@ class ProductDetail extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: Text(
-                          product.candidateName,
+                          leader.candidateName,
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
                       Text(
-                        product.candidateparty,
+                        leader.candidateparty,
                         style: TextStyle(
                           color: Colors.grey[500],
                         ),
@@ -308,7 +297,7 @@ class ProductDetail extends StatelessWidget {
                               color: Colors.red[500],
                             ),
                           ),
-                          Text(product.candidateWard.toStringAsPrecision(1)),
+                          Text(leader.candidateWard.toStringAsPrecision(1)),
                         ],
                       ),
                       SizedBox(height: 1),
