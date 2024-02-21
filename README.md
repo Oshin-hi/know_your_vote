@@ -13,9 +13,9 @@ KnowYourVote is a Flutter app designed to contribute towards achieving the Unite
 
 ### 2. Know Your Candidates and Their Manifesto
 
-- **Candidate Directory:** Access an extensive directory of political candidates running in your constituency.
-- **Manifesto Overview:** View detailed information about each candidate's manifesto, helping users make informed decisions.
-- **Candidate Profiles:** Explore candidate profiles, educational backgrounds, and previous political affiliations.
+- **Candidate Directory:** Access a directory of political candidates running in your constituency.
+- **Candidate Profiles:** View detailed information about each candidate's election symbol, and manifesto, helping users make informed decisions.
+
 
 ### 3. Follow Updates of Vote Counting
 
@@ -25,7 +25,7 @@ KnowYourVote is a Flutter app designed to contribute towards achieving the Unite
 ## Technology Stack
 
 - **Flutter Framework:** Developed using Dart programming language and Flutter framework for a seamless cross-platform experience.
-- **Firebase Integration:** Utilizes Firebase for real-time updates and secure user authentication.
+- **Firebase Integration:** Utilizes Firebase for real-time updates and secure user authentication (yet to be implemented)
 
 ## Getting Started
 
